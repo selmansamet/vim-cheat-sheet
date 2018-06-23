@@ -10,7 +10,6 @@ layout: default
           <h2>{{ page.global.title }}</h2>
           <ul>
             <li><kbd>:help {{ page.words.keyword }}</kbd> - {{ page.global.commands.helpForKeyword }}</li>
-            <li><kbd>:o {{ page.words.file }}</kbd> - {{ page.global.commands.openFile }}</li>
             <li><kbd>:saveas {{ page.words.file }}</kbd> - {{ page.global.commands.saveAsFile }}</li>
             <li><kbd>:close</kbd> - {{ page.global.commands.closePane }}</li>
             <li><kbd>K</kbd> - {{ page.global.commands.K }}</li>
@@ -40,9 +39,15 @@ layout: default
             <li><kbd>5G</kbd> - {{ page.cursorMovement.commands.fiveG }}</li>
             <li><kbd>fx</kbd> - {{ page.cursorMovement.commands.fx }}</li>
             <li><kbd>tx</kbd> - {{ page.cursorMovement.commands.tx }}</li>
+            <li><kbd>Fx</kbd> - {{ page.cursorMovement.commands.Fx }}</li>
+            <li><kbd>Tx</kbd> - {{ page.cursorMovement.commands.Tx }}</li>
+            <li><kbd>;</kbd> - {{ page.cursorMovement.commands.semicolon }}</li>
+            <li><kbd>,</kbd> - {{ page.cursorMovement.commands.comma }}</li>
             <li><kbd>}</kbd> - {{ page.cursorMovement.commands.closeCurlyBrace }}</li>
             <li><kbd>{</kbd> - {{ page.cursorMovement.commands.openCurlyBrace }}</li>
             <li><kbd>zz</kbd> - {{ page.cursorMovement.commands.centerCursor }}</li>
+            <li><kbd>Ctrl</kbd> + <kbd>e</kbd> - {{ page.cursorMovement.commands.CtrlPluse }}</li>
+            <li><kbd>Ctrl</kbd> + <kbd>y</kbd> - {{ page.cursorMovement.commands.CtrlPlusy }}</li>
             <li><kbd>Ctrl</kbd> + <kbd>b</kbd> - {{ page.cursorMovement.commands.CtrlPlusb }}</li>
             <li><kbd>Ctrl</kbd> + <kbd>f</kbd> - {{ page.cursorMovement.commands.CtrlPlusf }}</li>
             <li><kbd>Ctrl</kbd> + <kbd>d</kbd> - {{ page.cursorMovement.commands.CtrlPlusd }}</li>
@@ -68,9 +73,12 @@ layout: default
           <ul>
             <li><kbd>r</kbd> - {{ page.editing.commands.r }}</li>
             <li><kbd>J</kbd> - {{ page.editing.commands.J }}</li>
+            <li><kbd>gJ</kbd> - {{ page.editing.commands.gJ }}</li>
+            <li><kbd>gwip</kbd> - {{ page.editing.commands.gwip }}</li>
             <li><kbd>cc</kbd> - {{ page.editing.commands.cc }}</li>
-            <li><kbd>cw</kbd> - {{ page.editing.commands.cw }}</li>
             <li><kbd>c$</kbd> - {{ page.editing.commands.cDollar }}</li>
+            <li><kbd>ciw</kbd> - {{ page.editing.commands.ciw  }}</li>
+            <li><kbd>cw</kbd> - {{ page.editing.commands.cw }}</li>
             <li><kbd>s</kbd> - {{ page.editing.commands.s }}</li>
             <li><kbd>S</kbd> - {{ page.editing.commands.S }}</li>
             <li><kbd>xp</kbd> - {{ page.editing.commands.xp }}</li>
@@ -150,6 +158,7 @@ layout: default
             <li><kbd>:wq</kbd> or <kbd>:x</kbd> or <kbd>ZZ</kbd> - {{ page.exiting.commands.colonwq }}</li>
             <li><kbd>:q</kbd> - {{ page.exiting.commands.colonq }}</li>
             <li><kbd>:q!</kbd> or <kbd>ZQ</kbd> - {{ page.exiting.commands.colonqbang }}</li>
+            <li><kbd>:wqa</kbd> - {{ page.exiting.commands.colonwqa }}</li>
           </ul>
           <h2>{{ page.searchAndReplace.title }}</h2>
           <ul>
